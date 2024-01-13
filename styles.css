@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(49, 46, 46);
+    padding: 10px;
+    word-spacing: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li:hover {
+    transition-duration: .2s;
+    transition-delay: .2s;
+    border-radius: 7px;
+    background-color: #d1d1e7;
+    padding: 4px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+p {
+    text-align: left;
+    color: #ffffff; 
+    font-size: 12px;
+    margin-top: 25px; 
+    margin-left: 20px;  
+}
+
+h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo:hover {
+    transition-duration: .2s;
+    transition-delay: .2s;
+    border-radius: 10px;
+    background-color: #d1d1e7;
+}
+
+
+main {
+    margin-top: 20px;
+}
+
+
+.image{
+    height: 24vh;
+    background-position: center;
+    background-image: url(./images/pasta1.jpeg);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.image-overlay{
+    width: 100%;
+    height: 24vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 10px;   
+}
+
+#hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.hero1,
+.hero2,
+.hero3 {
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 0;
+    background-color: rgb(216, 212, 210);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+h6 {
+    margin-top: 20px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#hero-container a {
+    font-size: 10px;
+}
+
+.foot {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 30rem;
+}
+
+.footer-image {
+    width: 65px;
+}
+
+.copyright {
+    margin-right: 20px;
+    width: 70%;
+}
+.copyright .color {
+    margin-top: 40px;
+    height: 2px;
+    background-color: rgb(38, 38, 38);
+}
+
+footer p {
+    color: rgb(38, 38, 38);
+    font-size: 14px;
+    margin-left: 500px;
+}
+
+@media (max-width: 768px) {
+    .foot {
+        display: block;
+        gap: 10px;
+    }
+    footer p {
+        margin-left: 10px;
+    }
+    .logo {
+        width: 200px;
+    }
+
+    ul {
+        padding: 5px;
+        word-spacing: 3px;
+        border-radius: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    li a {
+        gap: 4px;
+    }
+    
+    li:hover {
+        padding: 2px;
+    }
+    
+    h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    p {
+        margin-top: 50px; 
+        margin-left: 20px;  
+    }
+
+    .image{
+        width: 90%;
+        height: 44vh;
+    }
+    .image-overlay{
+        width: 100%;
+        height: 44vh;  
+    }
+
+    #hero-container {
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .hero1,
+    .hero2,
+    .hero3 {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #hero-container img {
+        width: 90%;
+    }
+
+    .foot {
+        margin-left: 25px;
+        display: block;
+    }
+    
+    .footer-image {
+        width: 95px;
+        margin-left: 80px;
+    }
+    
+    .copyright {
+        margin-right: 10px;
+        width: 70%;
+        margin-left: 40px;
+    }
+    .copyright .color {
+        margin-top: 30px;
+    }
+    
+    footer p {
+        font-size: 13px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer p {
+        font-size: 13px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+}
+
